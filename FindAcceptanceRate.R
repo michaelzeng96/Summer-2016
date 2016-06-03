@@ -2,6 +2,8 @@ library(DBI)
 library(chron)
 library(RMySQL)
 rm(list=ls())
+
+
 lapply(dbListConnections(dbDriver(drv="MySQL")), dbDisconnect)
 
 myconn <- dbConnect(RMySQL::MySQL(), dbname="wingz-prod",host="wingz-platform-read001.c8voyumknq5z.us-west-1.rds.amazonaws.com",
@@ -28,20 +30,23 @@ acceptanceRateDF <- dbGetQuery(myconn, "SELECT
 acceptanceRateDF[,3] <- as.chron(acceptanceRateDF[,3]) #CONVERT date_reservation into chron object
 acceptanceRateDF[,4] <- as.chron(acceptanceRateDF[, 4]) #CONVERT date_accepted into chron object
 
-acceptanceRateDF[is.na(acceptanceRateDF)] <- 0 #REPLACE ALL NA'S WITH 0'S
+#acceptanceRateDF[is.na(acceptanceRateDF)] <- 0 #REPLACE ALL NA'S WITH 0'S
 
 hoursList <- vector("list", 24)
 for(i in 1:24){
-  hoursList[i] <- length(which(hours(acceptanceRateDF$date_accepted) == i-1))
+  hoursList[i] <- length(which(hours(acceptanceRateDF$date_reservation) == i-1)) #HOW MANY REQUESTS RECEIVED IN EACH HOUR
 }
-hoursList <- as.numeric(hoursList)
+hoursList <- as.numeric(hoursList) #24 HOURS, EACH HOUR HAS ITS OWN TOTAL NUM OF NOTIFICATIONS
 
 countNumOfAccepted <- function(hour){ #COUNT NUMBER OF ACCEPTED REQUESTS OUT OF ALL REQUESTS FOR SPECIFIED HOUR
   counter <- 0
-  indices <- which(hours(acceptanceRateDF$date_accepted) == hour)
-  for(i in 1:length(indices)){
-    if(acceptanceRateDF$gross_accepted_flag[indices[i]] == 1){
+  indices <- which(hours(acceptanceRateDF$date_reservation) == hour)
+  for(i in indices){
+    if(is.na(acceptanceRateDF$gross_accepted_flag[i]))
+      next
+    if(acceptanceRateDF$gross_accepted_flag[i] == 1){
         counter <- counter + 1
+        #print(i)
     }
   }
   return(counter)
@@ -49,24 +54,39 @@ countNumOfAccepted <- function(hour){ #COUNT NUMBER OF ACCEPTED REQUESTS OUT OF 
 
 countNumOfDeclined <- function(hour){ #COUNT NUMBER OF DECLINED REQUESTS OUT OF ALL REQUESTS FOR SPECIFIED HOUR
   counter <- 0
-  indices <- which(hours(acceptanceRateDF$date_accepted) == hour)
-  for(i in 1:length(indices)){
-    if(acceptanceRateDF$gross_accepted_flag[indices[i]] == 0){
+  indices <- which(hours(acceptanceRateDF$date_reservation) == hour)
+  for(i in indices){
+    if(is.na(acceptanceRateDF$gross_accepted_flag[i])){
       counter <- counter + 1
+      #print(i)
     }
   }
   return(counter)
 }
 
+
 acceptedHoursList <- vector("list", 24)
 for(i in 1:24){
-  acceptedHoursList[i] <- countNumOfAccepted(i - 1) 
+  acceptedHoursList[i] <- countNumOfAccepted(i - 1) #CREATES VECTOR OF 24 HOURS, EACH HOUR HAS A NUMBER OF ACCEPTED NOTIFICATIONS 
 }
+acceptedHoursList <- as.numeric(acceptedHoursList)
 
-declinedHoursList <- vector("list", 24)
-for(i in 1:24){
+declinedHoursList <- vector("list", 24) #CREATES VECTOR OF 24 HOURS, EACH HOUR HAS A NUMBER OF DECLIED. 
+for(i in 1:24){                         #MORE FOR TESTING/VERIFICATION PURPOSES, TO MAKE SURE FUNCTIONS ARE CORRECT
   declinedHoursList[i] <- countNumOfDeclined(i - 1)
 }
+declinedHoursList <- as.numeric(declinedHoursList)
+
+findAcceptanceRate <- function(hour){ #CALCULATE HOW MANY NOTIFICATIONS WERE ACCEPTED ON THIS HOUR. ACCEPTED/TOTAL 
+  probability <- acceptedHoursList[hour]/hoursList[hour]
+  return(probability)
+}
+
+acceptanceRatePerHour <- vector("list", 24)
+for(i in 1:24){
+  acceptanceRatePerHour[i] <- findAcceptanceRate(i) #VECTOR OF 24 HOURS, EACH HOUR HAS A ACCEPTANCE RATE 
+}
 
 
-acceptedDF <- data.frame()
+
+
