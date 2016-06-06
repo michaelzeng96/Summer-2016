@@ -31,11 +31,11 @@ departureDates$counter <- 1 #add counter component to each departureDate. init t
 ####################################### CODE TOCALCULATE DRIVER/HOUR PROBABILITIES ###################################
 #######################################################################################################################
 
-rideRequestDf1 <- dbGetQuery(myconn, "SELECT id, date_reservation FROM rides 
-                            WHERE state_id in (5,6) AND parent_id is null 
+rideRequestDf1 <- dbGetQuery(myconn, "SELECT id, date_reservation, airport FROM rides 
+                            WHERE state_id in (5,6) AND parent_id is null AND airport='SFO' OR airport='SEA'
                              LIMIT 10000")
-acceptedRequestDF1 <- dbGetQuery(myconn, "SELECT parent_id, date_reservation, date_accepted FROM rides 
-                                 WHERE parent_id is NOT null AND state_id in (6,7,8)
+acceptedRequestDF1 <- dbGetQuery(myconn, "SELECT parent_id, date_reservation, date_accepted, airport FROM rides 
+                                 WHERE parent_id is NOT null AND state_id in (6,7,8) AND airport='SFO' OR airport='SEA'
                                  ORDER BY parent_id
                                  LIMIT 10000")
 
