@@ -8,7 +8,7 @@ lapply(dbListConnections(dbDriver(drv="MySQL")), dbDisconnect)
 #ordered by when the request arrived 
 myconn <- dbConnect(RMySQL::MySQL(),dbname="wingz-prod",host="wingz-platform-read001.c8voyumknq5z.us-west-1.rds.amazonaws.com",
                     username="wingz-read-only", password="4P4v53S256hW7Z2X")
-rideRequestDf <- dbGetQuery(myconn, "SELECT date_reservation, departure_date FROM rides LIMIT 50")
+rideRequestDf <- dbGetQuery(myconn, "SELECT date_reservation, departure_date_utc FROM rides LIMIT 50")
 rideRequestDf[,1] <- as.chron(rideRequestDf[,1])
 rideRequestDf[,2] <- as.chron(rideRequestDf[,2])
 

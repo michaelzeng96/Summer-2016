@@ -13,7 +13,6 @@ myconn <- dbConnect(RMySQL::MySQL(), dbname="wingz-prod",host="wingz-platform-re
 
 acceptanceRateDF <- dbGetQuery(myconn, "SELECT
   ride_requests.id AS ride_requests_id,
-                               ride_requests.airport,
                                ride_requests.date_reservation,
                                gross_accepted.date_accepted,
                                gross_accepted.gross_accepted_flag
