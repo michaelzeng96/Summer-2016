@@ -193,7 +193,7 @@ isRequestNotInPool <- function(driverID, hour){ #return true if there is NO matc
 numOfDriversInPool <- NumOfDriver #how many drivers are available
 LastNotificationResponseAllowance <- 5 #time after last driver is notified before going into triage/leaving the system
 blastSizeCoefficient <- 1 #controls blast size. 1=start small grow fast, 100=start with many drivers grow slow
-bound <- 12*60 #number of minutes maximum for lead time. All lead times greater will follow the bound
+bound <- 12*60 #number of minutes maximum for distribution
 
 
 #FUNCTION TO GENERATE HOW MUCH TIME IS AVAILABLE FOR DISTRIBUTION (ONLY GENERAL, IMPLEMENT TEAM DISTRO LATER)
@@ -256,7 +256,7 @@ notifyDrivers <- function(leftIndex, rightIndex, DriversDF, RequestsDF, timeLeft
 notificationTime <- 0 #notification time at 0
 
 simulate <- function(){
-  for(i in 1:2){
+  for(i in 1:100){
     print(paste0("Leadtime is: ", RequestsDF$LeadTime[i]))
     if(RequestsDF$LeadTime[i] > bound){
       print(paste0("Leadtime changed to: ", bound))
