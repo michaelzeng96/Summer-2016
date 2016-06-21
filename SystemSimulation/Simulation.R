@@ -20,12 +20,13 @@ RequestsDF[,2] <- as.chron(RequestsDF[,2])
 
 
 #ADD HOUR COMPONENT FOR EASIER ACCESS TO HOUR
-#ADD COUNTER COMPONENT TO KEEP TRACK OF HOW MANY TIMES EACH REQUEST NOTIFICATION IS SENT
+#ADD COUNTER COMPONENT TO KEEP TRACK OF HOW MANY DRIVERS EACH REQUEST NOTIFICATION IS SENT TO BEFORE ACCEPTED
 #ADD LEADTIME COMPONENT TO KEEP TRACK OF HOW MUCH TIME THERE IS BETWEEN INITIAL REQUEST AND DEPARTURE TIME
 RequestsDF$ReservedHour <- 0
 RequestsDF$DepartureHour <- 0
 RequestsDF$Counter <- 0
 RequestsDF$LeadTime <- 0
+RequestsDF$Accepted <- 0
 
 
 #######################################################################################################################
@@ -33,10 +34,10 @@ RequestsDF$LeadTime <- 0
 #######################################################################################################################
 
 RequestsDF1 <- dbGetQuery(myconn, "SELECT id, date_reservation, airport FROM rides 
-                            WHERE state_id in (5,6) AND parent_id is null AND airport='SEA' 
+                            WHERE state_id in (5,6) AND parent_id is null AND date_reservation > '2016-01-01' 
                              LIMIT 10000")
 acceptedRequestDF1 <- dbGetQuery(myconn, "SELECT parent_id, date_reservation, date_accepted, airport FROM rides 
-                                 WHERE parent_id is NOT null AND state_id in (6,7,8) AND airport='SEA'
+                                 WHERE parent_id is NOT null AND state_id in (6,7,8) AND date_reservation > '2016-01-01'
                                  ORDER BY parent_id
                                  LIMIT 10000")
 
@@ -81,6 +82,9 @@ rm(acceptedRequestDF1,RequestsDF1,duplicatedRows,RequestsEachHour,indices,accept
 NumOfDriver <- 250
 DriverDF <- data.frame(matrix(nrow = NumOfDriver))
 colnames(DriverDF) <- "driverID"
+for(i in 1:NumOfDriver){
+  DriverDF$driverID[i] <- i
+}
 
 #FUNCTION TO CREATE AND PRIORITIZE A POOL OF DRIVERS
 prioritizeDrivers <- function(NumOfDrivers){
@@ -189,6 +193,8 @@ isRequestNotInPool <- function(driverID, hour){ #return true if there is NO matc
 numOfDriversInPool <- NumOfDriver #how many drivers are available
 LastNotificationResponseAllowance <- 5 #time after last driver is notified before going into triage/leaving the system
 blastSizeCoefficient <- 1 #controls blast size. 1=start small grow fast, 100=start with many drivers grow slow
+bound <- 12*60 #number of minutes maximum for lead time. All lead times greater will follow the bound
+
 
 #FUNCTION TO GENERATE HOW MUCH TIME IS AVAILABLE FOR DISTRIBUTION (ONLY GENERAL, IMPLEMENT TEAM DISTRO LATER)
 #L = lead time, E = ride expiration time, T = team distribution time, G = general distribution time, M = idle time
@@ -206,85 +212,95 @@ avaiableTime <- function(L){
 
 
 #FUNCTION TO NOTIFY ONE DRIVER
-notifyDriver <- function(driverID, RequestsDF){
+notifyDriver <- function(driverID, RequestsDF, i){
   #CHECK IF DRIVER CAN READ NOTIFICATION. IF CANNOT, MOVE ONTO NEXT DRIVER 
   if(canRead(RequestsDF$DepartureHour[i]) == TRUE){
-    print("Can read")
+    #print("Can read")
     #CHECK IF DRIVER IS ALREADY BOOKED DURING THIS REQUEST'S HOUR. IF IS BOOKED, MOVE ONTO NEXT DRIVER 
     if(isRequestNotInPool(driverID, RequestsDF$DepartureHour[i]) == TRUE){
       #CHECK IF DRIVER HAS CAPACITY TO TAKE THIS RIDE. IF NO CAPACITY, MOVE ONTO NEXT DRIVER
       #IF REQUEST PASS ALL CONDITIONS, POPULATE ACCEPTED POOL AND INCREMENT ACCEPTED RIDES
-      print("is not in pool")
+      #print("is not in pool")
       if(checkCapcityMatrix(driverID, RequestsDF$DepartureHour[i]) == TRUE){
-        print("has capacity")
+        print(paste0("Driver ",driverID," has capacity"))
         populateAcceptedPool(driverID, RequestsDF$DepartureHour[i]) 
-        AcceptedRides <<- AcceptedRides + 1
-        RequestsDF$Counter[i] <<- RequestsDF$Counter[i] + 1
+        RequestsDF$Accepted[i] <<- 1
         return()
       }
       else{ #if driver CANNOT take the ride due to CAPACITY MATRIX
-        RequestsDF$Counter[i] <<- RequestsDF$Counter[i] + 1
         return() #move to next driver and increment the request's count
       }
     }
     else{ #if driver IS NOT FREE, and is already booked accoringt to the request pool 
-      RequestsDF$Counter[i] <<- RequestsDF$Counter[i] + 1
       return() #move to next driver and increment the request's count
     }
   }
   else{  #if driver DOES NOT READ notification
-    RequestsDF$Counter[i] <<- RequestsDF$Counter[i] + 1
     return() #move to next driver and increment the request's count
   }
 }
 
 #FUNCTION TO RUN THROUGH A LIST OF DRIVERS
-notifyDrivers <- function(leftIndex, rightIndex, DriversDF, RequestsDF){
+notifyDrivers <- function(leftIndex, rightIndex, DriversDF, RequestsDF, timeLeft, i){
   listOfDrivers <- as.list(DriverDF[c(leftIndex:rightIndex),])
-  for(i in 1:length(listOfDrivers)){
-    print(paste0("notified ", DriverDF$driverID[i]))
-    timeLeft <- rideExpiration - LastNotificationResponseAllowance
-    print(paste0("Minutes left: ",timeLeft))
-    if(RequestsDF$Counter[i] > timeLeft){
-      print("Expired.")
-      ExpiredRides <<- ExpiredRides + 1
-    }
-    notifyDriver(DriverDF$driverID[i] ,RequestsDF)
+  #print(listOfDrivers)
+  for(j in 1:length(listOfDrivers)){
+    RequestsDF$Counter[i] <<- RequestsDF$Counter[i] + 1 #increase number of drivers notification has been sent to by 1
+    notifyDriver(DriverDF$driverID[listOfDrivers[[j]]] ,RequestsDF, i)
+    if(RequestsDF$Accepted[i] == 1)
+      break
   }
 }
 
 
+notificationTime <- 0 #notification time at 0
 
 simulate <- function(){
-  for(i in 1:8){
+  for(i in 1:2){
     print(paste0("Leadtime is: ", RequestsDF$LeadTime[i]))
-    if(RequestsDF$LeadTime[i] > 240){
-      next
-      }
+    if(RequestsDF$LeadTime[i] > bound){
+      print(paste0("Leadtime changed to: ", bound))
+      rideExpiration <- avaiableTime(bound)
+      print(paste0("ride expires in: ", rideExpiration))
+      logBase <- (factorial(avaiableTime(bound)-LastNotificationResponseAllowance)*blastSizeCoefficient^(avaiableTime(bound)-LastNotificationResponseAllowance))^(1/(numOfDriversInPool+3))
+    }
+    else{
+      rideExpiration <- avaiableTime(RequestsDF$LeadTime[i])
+      logBase <- (factorial(avaiableTime(RequestsDF$LeadTime[i])-LastNotificationResponseAllowance)*blastSizeCoefficient^(avaiableTime(RequestsDF$LeadTime[i])-LastNotificationResponseAllowance))^(1/(numOfDriversInPool+3))
+    }
     #calculate log base
-    logBase <- (factorial(avaiableTime(RequestsDF$LeadTime[i])-LastNotificationResponseAllowance)*blastSizeCoefficient^(avaiableTime(RequestsDF$LeadTime[i])-LastNotificationResponseAllowance))^(1/(numOfDriversInPool+3))
+    
     print(paste0("log base of: ",logBase))
-    #calculate ride expiration
-    rideExpiration <<- avaiableTime(RequestsDF$LeadTime[i])
-    print(paste0("ride expires in: ", rideExpiration))
     #step1) create pool of drivers in sorted order. put them in a queue (RAND FOR NOW)
-    driverList <- prioritizeDrivers(NumOfDriver)
+    #prioritizeDrivers(NumOfDriver)
     #step2) LOOP, calculate N number of drivers to notify. 
     #step3) in the same loop, create the list of drivers by selecting N drivers from front of queue
     #step4) run notifyDrivers() on that list
-    dListIndexLeft <- 1
-    dListIndexRight <- 1
+    dListIndexLeft <- 0
+    dListIndexRight <- 0
     totalNotifiedDrivers <<- 0
-    while(totalNotifiedDrivers < numOfDriversInPool){
+    timeLeft <<- rideExpiration - LastNotificationResponseAllowance
+    while(totalNotifiedDrivers < numOfDriversInPool & timeLeft > 0){
       #N chooses number of drivers to notify per minute/blast
       N <-min(round(max(log(blastSizeCoefficient*RequestsDF$Counter[i], logBase),1),0),numOfDriversInPool-totalNotifiedDrivers)
       print(paste0("blast size: ", N))
       totalNotifiedDrivers <<- totalNotifiedDrivers + N
-      dListIndexRight <<- dListIndexRight + N
-      notifyDrivers(dListIndexLeft,dListIndexRight,DriverDF,RequestsDF)
-      dListIndexLeft <<- dListIndexRight
-      print(paste0("total notified drivers: ", totalNotifiedDrivers))
+      dListIndexRight <- dListIndexRight + N 
+      print(paste0("right index: ", dListIndexRight))
+      timeLeft <<- timeLeft - 1
+      if(timeLeft == 0){
+        ExpiredRides <<- ExpiredRides + 1
+        break        
+      }
+      notifyDrivers(dListIndexLeft,dListIndexRight,DriverDF,RequestsDF, timeLeft, i)
+      if(RequestsDF$Accepted[i] == 1){
+        AcceptedRides <<- AcceptedRides + 1
+        break
+      }
+      dListIndexLeft <- dListIndexRight + 1
+      print(paste0("left index: ", dListIndexLeft))
     }
+    print(paste0("total notified drivers: ", totalNotifiedDrivers,". Time left in ride: ", timeLeft ))
   }
   #show() 
 }
