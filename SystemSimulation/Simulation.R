@@ -106,11 +106,48 @@ HoursOfDay <- 24
 AcceptedRides <- 0
 ExpiredRides <- 0
 
-#RANDOM VALUES FOR CAPACITY MATRIX. 24 BY 50 = 1200 VALUES. 1 = Can Take, 0 = Cannot Take
-ableOrNotAble <- sample(0:1, HoursOfDay*NumOfDriver, replace=T)
 
-#CAPACITY MATRIX. ARBITRARY BINARY VALUES WHICH TELL IF A SPECIFIC DRIVER CAN/CANNOT TAKE A RIDE AT A CERTAIN HOUR
-capacityMat <- matrix(ableOrNotAble, nrow = NumOfDriver, ncol = 24, byrow = T)
+
+
+
+
+
+##############CAPACITY MATRIX REVAMPED. GO OFF OF NORMALIZED DISTRIBUTION OF ACCEPTED REQUESTS/HOUR####################
+
+#get all accepted departure hours, then get the normalized occurence probability for each hour 
+
+allHours <- dbGetQuery(myconn, "SELECT date_accepted FROM rides 
+                       WHERE parent_id is NOT null AND state_id in (6,7,8) AND date_reservation > '2016-01-01'
+                       ORDER BY parent_id
+                       LIMIT 10000")
+
+allHours[,1] <- as.chron(allHours[,1])
+#dataframe of 24 hours to count occurence for each hour
+hoursMat <- data.frame(timesAccepted = numeric())
+for(i in 0:23){
+  hoursMat[nrow(hoursMat)+1, ] <- length(which(hours(allHours$date_accepted) == i))
+}
+
+#normalize each hour's count to find the probability of occurence for each hour
+hoursMat$occurenceProb <- 0
+sum <- sum(hoursMat$timesAccepted)
+for(i in 1:24){
+  hoursMat$occurenceProb[i] <- hoursMat$timesAccepted[i]/sum
+}
+
+rm(allHours, sum)
+
+#CAPACITY MATRIX. TELLS IF A SPECIFIC DRIVER CAN/CANNOT TAKE A RIDE AT A CERTAIN HOUR
+#Each hour's values average to the actual probability
+#use a random normal distribution 
+ableOrNotAble <- c()
+for(i in 1:HoursOfDay){
+  ableOrNotAble <- c(ableOrNotAble,rnorm(NumOfDriver, hoursMat$occurenceProb[i], hoursMat$occurenceProb[i]/4))
+}
+
+capacityMat <- matrix(ableOrNotAble, nrow = HoursOfDay, ncol = NumOfDriver, byrow=T)
+###################################CAPACITY MATRIX CODE ENDS###########################################################
+
 
 
 
@@ -168,10 +205,11 @@ canRead <- function(hour){ #use a random uniform distribution i.e 0.2 <= driver 
 
 #FUNCTION TO CHECK THE CAPACITY MATRIX TO SEE IF DRIVER CAN TAKE A RIDE OR NOT
 checkCapcityMatrix <- function(driverID, hour){
-  if(capacityMat[driverID, hour+1] == 1)
+  prob <- capacityMat[hour+1,driverID]
+  x <- runif(1, 0.0, 1.0)
+  if(x<=prob)
     return(TRUE)
-  else
-    return(FALSE)
+  return(FALSE)
 }
 
 
@@ -213,6 +251,7 @@ avaiableTime <- function(L){
   return(E)
 }
 
+count <<- 0
 
 #FUNCTION TO NOTIFY ONE DRIVER
 notifyDriver <- function(driverID, RequestsDF, i){
@@ -225,12 +264,13 @@ notifyDriver <- function(driverID, RequestsDF, i){
       #IF REQUEST PASS ALL CONDITIONS, POPULATE ACCEPTED POOL AND INCREMENT ACCEPTED RIDES
       #print("is not in pool")
       if(checkCapcityMatrix(driverID, RequestsDF$DepartureHour[i]) == TRUE){
-        print(paste0("Driver ",driverID," has capacity"))
+        #print(paste0("Driver ",driverID," has capacity"))
         populateAcceptedPool(driverID, RequestsDF$DepartureHour[i]) 
         RequestsDF$Accepted[i] <<- 1
         return()
       }
       else{ #if driver CANNOT take the ride due to CAPACITY MATRIX
+        count <<- count + 1
         return() #move to next driver and increment the request's count
       }
     }
@@ -260,11 +300,11 @@ notificationTime <- 0 #notification time at 0
 
 simulate <- function(){
   for(i in 1:1000){
-    print(paste0("Leadtime is: ", RequestsDF$LeadTime[i]))
+    #impprint(paste0("Leadtime is: ", RequestsDF$LeadTime[i]))
     if(RequestsDF$LeadTime[i] > bound){
-      print(paste0("Leadtime changed to: ", bound))
+      #impprint(paste0("Leadtime changed to: ", bound))
       rideExpiration <- avaiableTime(bound)
-      print(paste0("ride expires in: ", rideExpiration))
+      #impprint(paste0("ride expires in: ", rideExpiration))
       logBase <- (factorial(avaiableTime(bound)-LastNotificationResponseAllowance)*blastSizeCoefficient^(avaiableTime(bound)-LastNotificationResponseAllowance))^(1/(numOfDriversInPool+3))
     }
     else{
@@ -273,7 +313,7 @@ simulate <- function(){
     }
     #calculate log base
     
-    print(paste0("log base of: ",logBase))
+    #impprint(paste0("log base of: ",logBase))
     #step1) create pool of drivers in sorted order. put them in a queue (RAND FOR NOW)
     #prioritizeDrivers(NumOfDriver)
     #step2) LOOP, calculate N number of drivers to notify. 
@@ -286,10 +326,10 @@ simulate <- function(){
     while(totalNotifiedDrivers < numOfDriversInPool & timeLeft > 0){
       #N chooses number of drivers to notify per minute/blast
       N <-min(round(max(log(blastSizeCoefficient*RequestsDF$Counter[i], logBase),1),0),numOfDriversInPool-totalNotifiedDrivers)
-      print(paste0("blast size: ", N))
+      #impprint(paste0("blast size: ", N))
       totalNotifiedDrivers <<- totalNotifiedDrivers + N
       dListIndexRight <- dListIndexRight + N 
-      print(paste0("right index: ", dListIndexRight))
+      #impprint(paste0("right index: ", dListIndexRight))
       timeLeft <<- timeLeft - 1
       if(timeLeft == 0){
         ExpiredRides <<- ExpiredRides + 1
@@ -305,9 +345,9 @@ simulate <- function(){
         ExpiredRides <<- ExpiredRides + 1
         break
       }
-      print(paste0("left index: ", dListIndexLeft))
+      #impprint(paste0("left index: ", dListIndexLeft))
     }
-    print(paste0("total notified drivers: ", totalNotifiedDrivers,". Time left in ride: ", timeLeft ))
+    #impprint(paste0("total notified drivers: ", totalNotifiedDrivers,". Time left in ride: ", timeLeft ))
   }
   #show() 
 }
