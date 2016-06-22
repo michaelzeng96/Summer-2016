@@ -12,7 +12,10 @@ myconn <- dbConnect(RMySQL::MySQL(),dbname="wingz-prod",host="wingz-platform-rea
 
 
 #SET NUMBER OF RIDE REQUESTS WITH SQL "LIMIT"
-RequestsDF <- dbGetQuery(myconn, "SELECT date_reservation, departure_date_utc FROM rides WHERE date_reservation > '2016-06-01' LIMIT 1000") 
+RequestsDF <- dbGetQuery(myconn, "SELECT date_reservation, departure_date_utc FROM rides 
+                         WHERE state_id in (5,6) AND parent_id is null 
+                         AND date_reservation > '2016-06-01' 
+                         LIMIT 1000") 
 
 #CONVERT BOTH COLUMNS OF RIDEREQUEST TO CHRON OBJECTS FOR EASIER ACCESS TO THE DATES
 RequestsDF[,1] <- as.chron(RequestsDF[,1])  
@@ -256,7 +259,7 @@ notifyDrivers <- function(leftIndex, rightIndex, DriversDF, RequestsDF, timeLeft
 notificationTime <- 0 #notification time at 0
 
 simulate <- function(){
-  for(i in 1:100){
+  for(i in 1:1000){
     print(paste0("Leadtime is: ", RequestsDF$LeadTime[i]))
     if(RequestsDF$LeadTime[i] > bound){
       print(paste0("Leadtime changed to: ", bound))
@@ -298,6 +301,10 @@ simulate <- function(){
         break
       }
       dListIndexLeft <- dListIndexRight + 1
+      if(dListIndexLeft > numOfDriversInPool){
+        ExpiredRides <<- ExpiredRides + 1
+        break
+      }
       print(paste0("left index: ", dListIndexLeft))
     }
     print(paste0("total notified drivers: ", totalNotifiedDrivers,". Time left in ride: ", timeLeft ))
