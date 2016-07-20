@@ -18,7 +18,10 @@ def parseAllCities(state):
     url = 'https://www.caring.com/local/independent-living-in-'+state
     #http = httplib2.Http()
     #status, response = http.request(url)
-    r = requests.get(url, timeout = 5)
+    try:
+        r = requests.get(url, timeout = 5)
+    except:
+        return
     soup = BeautifulSoup(r.text)
     #print 'Fetching cities from '+url+'...'
     div = soup.findAll('article', {'class':'container'})
@@ -38,7 +41,10 @@ def parseAllCommunities(city):
     print 'Currently on '+url+'\n'
     #http = httplib2.Http()
     #status, response = http.request(url)
-    r = requests.get(url, timeout = 5)
+    try:
+        r = requests.get(url, timeout = 5)
+    except:
+        return
     soup = BeautifulSoup(r.text)
     #soup =  BeautifulSoup(response)
     div = soup.findAll('div', {'class' : 'col-md-8'})
@@ -57,7 +63,10 @@ def parseAllCommunities(city):
             url='https://www.caring.com'+count[i-2].find('a')['href']
             print 'Currently on '+url+'\n'
             #http = httplib2.Http()
-            r = requests.get(url, timeout = 5)
+            try:
+                r = requests.get(url, timeout = 5)
+            except:
+                return
             soup = BeautifulSoup(r.text)
             div = soup.findAll('div', {'class' : 'col-md-8'})
             buttons = div[1].findAll('div', {'class':'col-sm-3 col-xs-12'})
@@ -71,7 +80,10 @@ def parseInfoFromCommunity(communityLink):
     #http = httplib2.Http()
     #status, response = http.request(communityLink)
     #soup = BeautifulSoup(response)
-    r = requests.get(communityLink, timeout = 5)
+    try:
+        r = requests.get(url, timeout = 5)
+    except:
+        return
     soup = BeautifulSoup(r.text)
     #scrape name
     div = soup.findAll('div', {'itemprop':'name'})
