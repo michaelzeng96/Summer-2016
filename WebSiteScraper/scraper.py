@@ -1,5 +1,5 @@
 import httplib2
-import re
+import requests
 from BeautifulSoup import BeautifulSoup, SoupStrainer
 import pandas as pd
 import collections 
@@ -16,9 +16,10 @@ addresses = []
 
 def parseAllCities(state):
     url = 'https://www.caring.com/local/independent-living-in-'+state
-    http = httplib2.Http()
-    status, response = http.request(url)
-    soup =  BeautifulSoup(response)
+    #http = httplib2.Http()
+    #status, response = http.request(url)
+    r = requests.get(url, timeout = 5)
+    soup = BeautifulSoup(r.text)
     #print 'Fetching cities from '+url+'...'
     div = soup.findAll('article', {'class':'container'})
     
@@ -35,9 +36,11 @@ def parseAllCities(state):
 def parseAllCommunities(city):
     url = 'https://www.caring.com'+city
     print 'Currently on '+url+'\n'
-    http = httplib2.Http()
-    status, response = http.request(url)
-    soup =  BeautifulSoup(response)
+    #http = httplib2.Http()
+    #status, response = http.request(url)
+    r = requests.get(url, timeout = 5)
+    soup = BeautifulSoup(r.text)
+    #soup =  BeautifulSoup(response)
     div = soup.findAll('div', {'class' : 'col-md-8'})
     buttons = div[1].findAll('div', {'class':'col-sm-3 col-xs-12'})
     for i in xrange(len(buttons)):
@@ -53,9 +56,9 @@ def parseAllCommunities(city):
         for i in xrange(2, len(count)+2):
             url='https://www.caring.com'+count[i-2].find('a')['href']
             print 'Currently on '+url+'\n'
-            http = httplib2.Http()
-            status, response = http.request(url)
-            soup = BeautifulSoup(response)
+            #http = httplib2.Http()
+            r = requests.get(url, timeout = 5)
+            soup = BeautifulSoup(r.text)
             div = soup.findAll('div', {'class' : 'col-md-8'})
             buttons = div[1].findAll('div', {'class':'col-sm-3 col-xs-12'})
             for i in xrange(len(buttons)):
@@ -65,9 +68,11 @@ def parseAllCommunities(city):
     
 def parseInfoFromCommunity(communityLink):
     #connect to website
-    http = httplib2.Http()
-    status, response = http.request(communityLink)
-    soup = BeautifulSoup(response)
+    #http = httplib2.Http()
+    #status, response = http.request(communityLink)
+    #soup = BeautifulSoup(response)
+    r = requests.get(communityLink, timeout = 5)
+    soup = BeautifulSoup(r.text)
     #scrape name
     div = soup.findAll('div', {'itemprop':'name'})
     if div is None:
