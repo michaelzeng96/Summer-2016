@@ -34,7 +34,12 @@ with open('C:/Wingz/TrumpAIBot/tweets.txt','wb') as outfile:
                 continue
             else:
                     try:
-                        text = tweet['text']    
+                        text = tweet['text']
+                        if len(text) < 140:
+                            left_over = 140 - len(text)
+                            for i in range(left_over):
+                                text = text + ' '                   
+                        text = text[0:140]
                         json.dump(text, outfile)
                         total += 1
                     except:

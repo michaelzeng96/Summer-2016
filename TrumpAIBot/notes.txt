@@ -1,0 +1,8 @@
+problems:
+
+and ampersand (i.e &) appears as '&amp;'
+thus making it so that there are more than 140 characters
+
+in my text document, all tweets are saved without regard that tweets may be under 140 characters. my lstm char window is set to 140, but that is without consideration that my saved tweet document which my lstm trains off of is not 140 chars each tweet. therefore i need to add ' ', or another variety of char to indicate the end of a tweet. i need to do this to avoid overlap of tweets. 
+
+the model is trained to complete mentioned tweets, rather than actually respond to them. perhaps it could also be a response... 
