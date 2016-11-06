@@ -29,7 +29,7 @@ print 'Total chars in text: ' + str(len(data))
 print 'Total unique chars: ' + str(len(chars))
 
 #determine hyperparameters
-seq_length = 129 #how many chars the sliding window covers
+seq_length = 15 #how many chars the sliding window covers
 dataX = []
 dataY = []
 for i in range(0, len(data) - seq_length, 1):
