@@ -1,0 +1,595 @@
+,email_utilisateur,id_zone,id_utilisateur,weight
+0,christof@wingz.com,Your Geo Zone Selection [Lake County],112378.0,2.0
+1,christof@wingz.com,Your Geo Zone Selection [Sonoma County],112378.0,2.0
+2,christof@wingz.com,Your Geo Zone Selection [Marin County],112378.0,2.0
+3,christof@wingz.com,Your Geo Zone Selection [Napa County],112378.0,2.0
+4,christof@wingz.com,Your Geo Zone Selection [Solano County],112378.0,2.0
+5,christof@wingz.com,Your Geo Zone Selection [Contra Costa County],112378.0,2.0
+6,christof@wingz.com,Your Geo Zone Selection [Alameda County],112378.0,2.0
+7,christof@wingz.com,Your Geo Zone Selection [Santa Clara County],112378.0,2.0
+8,christof@wingz.com,Your Geo Zone Selection [Santa Cruz County],112378.0,2.0
+9,christof@wingz.com,Your Geo Zone Selection [San Mateo County],112378.0,2.0
+10,christof@wingz.com,Your Geo Zone Selection [San Francisco County],112378.0,3.0
+11,jessbrew@hotmail.com,Your Geo Zone Selection [Lake County],114053.0,1.0
+12,jessbrew@hotmail.com,Your Geo Zone Selection [Sonoma County],114053.0,2.0
+13,jessbrew@hotmail.com,Your Geo Zone Selection [Marin County],114053.0,3.0
+14,jessbrew@hotmail.com,Your Geo Zone Selection [Napa County],114053.0,1.0
+15,jessbrew@hotmail.com,Your Geo Zone Selection [Solano County],114053.0,1.0
+16,jessbrew@hotmail.com,Your Geo Zone Selection [Contra Costa County],114053.0,1.0
+17,jessbrew@hotmail.com,Your Geo Zone Selection [Alameda County],114053.0,1.0
+18,jessbrew@hotmail.com,Your Geo Zone Selection [Santa Clara County],114053.0,1.0
+19,jessbrew@hotmail.com,Your Geo Zone Selection [Santa Cruz County],114053.0,1.0
+20,jessbrew@hotmail.com,Your Geo Zone Selection [San Mateo County],114053.0,1.0
+21,jessbrew@hotmail.com,Your Geo Zone Selection [San Francisco County],114053.0,1.0
+22,PATRICKB4@GMAIL.COM,Your Geo Zone Selection [Lake County],,1.0
+23,PATRICKB4@GMAIL.COM,Your Geo Zone Selection [Sonoma County],,1.0
+24,PATRICKB4@GMAIL.COM,Your Geo Zone Selection [Marin County],,1.0
+25,PATRICKB4@GMAIL.COM,Your Geo Zone Selection [Napa County],,1.0
+26,PATRICKB4@GMAIL.COM,Your Geo Zone Selection [Solano County],,1.0
+27,PATRICKB4@GMAIL.COM,Your Geo Zone Selection [Contra Costa County],,2.0
+28,PATRICKB4@GMAIL.COM,Your Geo Zone Selection [Alameda County],,2.0
+29,PATRICKB4@GMAIL.COM,Your Geo Zone Selection [Santa Clara County],,1.0
+30,PATRICKB4@GMAIL.COM,Your Geo Zone Selection [Santa Cruz County],,1.0
+31,PATRICKB4@GMAIL.COM,Your Geo Zone Selection [San Mateo County],,3.0
+32,PATRICKB4@GMAIL.COM,Your Geo Zone Selection [San Francisco County],,3.0
+33,richard@varrasso.com,Your Geo Zone Selection [Lake County],109932.0,1.0
+34,richard@varrasso.com,Your Geo Zone Selection [Sonoma County],109932.0,1.0
+35,richard@varrasso.com,Your Geo Zone Selection [Marin County],109932.0,1.0
+36,richard@varrasso.com,Your Geo Zone Selection [Napa County],109932.0,1.0
+37,richard@varrasso.com,Your Geo Zone Selection [Solano County],109932.0,1.0
+38,richard@varrasso.com,Your Geo Zone Selection [Contra Costa County],109932.0,2.0
+39,richard@varrasso.com,Your Geo Zone Selection [Alameda County],109932.0,3.0
+40,richard@varrasso.com,Your Geo Zone Selection [Santa Clara County],109932.0,3.0
+41,richard@varrasso.com,Your Geo Zone Selection [Santa Cruz County],109932.0,1.0
+42,richard@varrasso.com,Your Geo Zone Selection [San Mateo County],109932.0,3.0
+43,richard@varrasso.com,Your Geo Zone Selection [San Francisco County],109932.0,2.0
+44,rjsat1@yahoo.com,Your Geo Zone Selection [Lake County],122994.0,1.0
+45,rjsat1@yahoo.com,Your Geo Zone Selection [Sonoma County],122994.0,2.0
+46,rjsat1@yahoo.com,Your Geo Zone Selection [Marin County],122994.0,3.0
+47,rjsat1@yahoo.com,Your Geo Zone Selection [Napa County],122994.0,2.0
+48,rjsat1@yahoo.com,Your Geo Zone Selection [Solano County],122994.0,2.0
+49,rjsat1@yahoo.com,Your Geo Zone Selection [Contra Costa County],122994.0,3.0
+50,rjsat1@yahoo.com,Your Geo Zone Selection [Alameda County],122994.0,3.0
+51,rjsat1@yahoo.com,Your Geo Zone Selection [Santa Clara County],122994.0,3.0
+52,rjsat1@yahoo.com,Your Geo Zone Selection [Santa Cruz County],122994.0,2.0
+53,rjsat1@yahoo.com,Your Geo Zone Selection [San Mateo County],122994.0,3.0
+54,rjsat1@yahoo.com,Your Geo Zone Selection [San Francisco County],122994.0,3.0
+55,annconnolly@gmail.com,Your Geo Zone Selection [Lake County],107159.0,1.0
+56,annconnolly@gmail.com,Your Geo Zone Selection [Sonoma County],107159.0,1.0
+57,annconnolly@gmail.com,Your Geo Zone Selection [Marin County],107159.0,2.0
+58,annconnolly@gmail.com,Your Geo Zone Selection [Napa County],107159.0,1.0
+59,annconnolly@gmail.com,Your Geo Zone Selection [Solano County],107159.0,1.0
+60,annconnolly@gmail.com,Your Geo Zone Selection [Contra Costa County],107159.0,2.0
+61,annconnolly@gmail.com,Your Geo Zone Selection [Alameda County],107159.0,3.0
+62,annconnolly@gmail.com,Your Geo Zone Selection [Santa Clara County],107159.0,1.0
+63,annconnolly@gmail.com,Your Geo Zone Selection [Santa Cruz County],107159.0,1.0
+64,annconnolly@gmail.com,Your Geo Zone Selection [San Mateo County],107159.0,1.0
+65,annconnolly@gmail.com,Your Geo Zone Selection [San Francisco County],107159.0,2.0
+66,danaclarin@gmail.com,Your Geo Zone Selection [Lake County],67021.0,1.0
+67,danaclarin@gmail.com,Your Geo Zone Selection [Sonoma County],67021.0,2.0
+68,danaclarin@gmail.com,Your Geo Zone Selection [Marin County],67021.0,3.0
+69,danaclarin@gmail.com,Your Geo Zone Selection [Napa County],67021.0,2.0
+70,danaclarin@gmail.com,Your Geo Zone Selection [Solano County],67021.0,2.0
+71,danaclarin@gmail.com,Your Geo Zone Selection [Contra Costa County],67021.0,3.0
+72,danaclarin@gmail.com,Your Geo Zone Selection [Alameda County],67021.0,3.0
+73,danaclarin@gmail.com,Your Geo Zone Selection [Santa Clara County],67021.0,2.0
+74,danaclarin@gmail.com,Your Geo Zone Selection [Santa Cruz County],67021.0,2.0
+75,danaclarin@gmail.com,Your Geo Zone Selection [San Mateo County],67021.0,3.0
+76,danaclarin@gmail.com,Your Geo Zone Selection [San Francisco County],67021.0,3.0
+77,tpintacsi@gmail.com,Your Geo Zone Selection [Lake County],116566.0,1.0
+78,tpintacsi@gmail.com,Your Geo Zone Selection [Sonoma County],116566.0,1.0
+79,tpintacsi@gmail.com,Your Geo Zone Selection [Marin County],116566.0,1.0
+80,tpintacsi@gmail.com,Your Geo Zone Selection [Napa County],116566.0,1.0
+81,tpintacsi@gmail.com,Your Geo Zone Selection [Solano County],116566.0,1.0
+82,tpintacsi@gmail.com,Your Geo Zone Selection [Contra Costa County],116566.0,3.0
+83,tpintacsi@gmail.com,Your Geo Zone Selection [Alameda County],116566.0,3.0
+84,tpintacsi@gmail.com,Your Geo Zone Selection [Santa Clara County],116566.0,2.0
+85,tpintacsi@gmail.com,Your Geo Zone Selection [Santa Cruz County],116566.0,1.0
+86,tpintacsi@gmail.com,Your Geo Zone Selection [San Mateo County],116566.0,1.0
+87,tpintacsi@gmail.com,Your Geo Zone Selection [San Francisco County],116566.0,1.0
+88,mywingzinfo@yahoo.com,Your Geo Zone Selection [Lake County],67216.0,2.0
+89,mywingzinfo@yahoo.com,Your Geo Zone Selection [Sonoma County],67216.0,2.0
+90,mywingzinfo@yahoo.com,Your Geo Zone Selection [Marin County],67216.0,2.0
+91,mywingzinfo@yahoo.com,Your Geo Zone Selection [Napa County],67216.0,2.0
+92,mywingzinfo@yahoo.com,Your Geo Zone Selection [Solano County],67216.0,2.0
+93,mywingzinfo@yahoo.com,Your Geo Zone Selection [Contra Costa County],67216.0,2.0
+94,mywingzinfo@yahoo.com,Your Geo Zone Selection [Alameda County],67216.0,2.0
+95,mywingzinfo@yahoo.com,Your Geo Zone Selection [Santa Clara County],67216.0,3.0
+96,mywingzinfo@yahoo.com,Your Geo Zone Selection [Santa Cruz County],67216.0,3.0
+97,mywingzinfo@yahoo.com,Your Geo Zone Selection [San Mateo County],67216.0,3.0
+98,mywingzinfo@yahoo.com,Your Geo Zone Selection [San Francisco County],67216.0,3.0
+99,zakota@hotmail.com,Your Geo Zone Selection [Lake County],55424.0,1.0
+100,zakota@hotmail.com,Your Geo Zone Selection [Sonoma County],55424.0,2.0
+101,zakota@hotmail.com,Your Geo Zone Selection [Marin County],55424.0,3.0
+102,zakota@hotmail.com,Your Geo Zone Selection [Napa County],55424.0,3.0
+103,zakota@hotmail.com,Your Geo Zone Selection [Solano County],55424.0,3.0
+104,zakota@hotmail.com,Your Geo Zone Selection [Contra Costa County],55424.0,3.0
+105,zakota@hotmail.com,Your Geo Zone Selection [Alameda County],55424.0,2.0
+106,zakota@hotmail.com,Your Geo Zone Selection [Santa Clara County],55424.0,1.0
+107,zakota@hotmail.com,Your Geo Zone Selection [Santa Cruz County],55424.0,1.0
+108,zakota@hotmail.com,Your Geo Zone Selection [San Mateo County],55424.0,1.0
+109,zakota@hotmail.com,Your Geo Zone Selection [San Francisco County],55424.0,3.0
+110,mywingzinfo@yahoo.com,Your Geo Zone Selection [Lake County],67216.0,2.0
+111,mywingzinfo@yahoo.com,Your Geo Zone Selection [Sonoma County],67216.0,2.0
+112,mywingzinfo@yahoo.com,Your Geo Zone Selection [Marin County],67216.0,2.0
+113,mywingzinfo@yahoo.com,Your Geo Zone Selection [Napa County],67216.0,2.0
+114,mywingzinfo@yahoo.com,Your Geo Zone Selection [Solano County],67216.0,2.0
+115,mywingzinfo@yahoo.com,Your Geo Zone Selection [Contra Costa County],67216.0,2.0
+116,mywingzinfo@yahoo.com,Your Geo Zone Selection [Alameda County],67216.0,2.0
+117,mywingzinfo@yahoo.com,Your Geo Zone Selection [Santa Clara County],67216.0,3.0
+118,mywingzinfo@yahoo.com,Your Geo Zone Selection [Santa Cruz County],67216.0,3.0
+119,mywingzinfo@yahoo.com,Your Geo Zone Selection [San Mateo County],67216.0,3.0
+120,mywingzinfo@yahoo.com,Your Geo Zone Selection [San Francisco County],67216.0,3.0
+121,wingzdrivermark@gmail.com,Your Geo Zone Selection [Lake County],90867.0,2.0
+122,wingzdrivermark@gmail.com,Your Geo Zone Selection [Sonoma County],90867.0,3.0
+123,wingzdrivermark@gmail.com,Your Geo Zone Selection [Marin County],90867.0,3.0
+124,wingzdrivermark@gmail.com,Your Geo Zone Selection [Napa County],90867.0,3.0
+125,wingzdrivermark@gmail.com,Your Geo Zone Selection [Solano County],90867.0,2.0
+126,wingzdrivermark@gmail.com,Your Geo Zone Selection [Contra Costa County],90867.0,2.0
+127,wingzdrivermark@gmail.com,Your Geo Zone Selection [Alameda County],90867.0,2.0
+128,wingzdrivermark@gmail.com,Your Geo Zone Selection [Santa Clara County],90867.0,1.0
+129,wingzdrivermark@gmail.com,Your Geo Zone Selection [Santa Cruz County],90867.0,1.0
+130,wingzdrivermark@gmail.com,Your Geo Zone Selection [San Mateo County],90867.0,2.0
+131,wingzdrivermark@gmail.com,Your Geo Zone Selection [San Francisco County],90867.0,3.0
+132,jbsfnights@hotmail.com,Your Geo Zone Selection [Lake County],117670.0,1.0
+133,jbsfnights@hotmail.com,Your Geo Zone Selection [Sonoma County],117670.0,2.0
+134,jbsfnights@hotmail.com,Your Geo Zone Selection [Marin County],117670.0,2.0
+135,jbsfnights@hotmail.com,Your Geo Zone Selection [Napa County],117670.0,2.0
+136,jbsfnights@hotmail.com,Your Geo Zone Selection [Solano County],117670.0,2.0
+137,jbsfnights@hotmail.com,Your Geo Zone Selection [Contra Costa County],117670.0,3.0
+138,jbsfnights@hotmail.com,Your Geo Zone Selection [Alameda County],117670.0,3.0
+139,jbsfnights@hotmail.com,Your Geo Zone Selection [Santa Clara County],117670.0,2.0
+140,jbsfnights@hotmail.com,Your Geo Zone Selection [Santa Cruz County],117670.0,2.0
+141,jbsfnights@hotmail.com,Your Geo Zone Selection [San Mateo County],117670.0,2.0
+142,jbsfnights@hotmail.com,Your Geo Zone Selection [San Francisco County],117670.0,2.0
+143,joncogo@gmail.com,Your Geo Zone Selection [Lake County],101074.0,1.0
+144,joncogo@gmail.com,Your Geo Zone Selection [Sonoma County],101074.0,1.0
+145,joncogo@gmail.com,Your Geo Zone Selection [Marin County],101074.0,1.0
+146,joncogo@gmail.com,Your Geo Zone Selection [Napa County],101074.0,1.0
+147,joncogo@gmail.com,Your Geo Zone Selection [Solano County],101074.0,1.0
+148,joncogo@gmail.com,Your Geo Zone Selection [Contra Costa County],101074.0,3.0
+149,joncogo@gmail.com,Your Geo Zone Selection [Alameda County],101074.0,2.0
+150,joncogo@gmail.com,Your Geo Zone Selection [Santa Clara County],101074.0,1.0
+151,joncogo@gmail.com,Your Geo Zone Selection [Santa Cruz County],101074.0,1.0
+152,joncogo@gmail.com,Your Geo Zone Selection [San Mateo County],101074.0,1.0
+153,joncogo@gmail.com,Your Geo Zone Selection [San Francisco County],101074.0,1.0
+154,frankgould65@gmail.com,Your Geo Zone Selection [Lake County],75993.0,2.0
+155,frankgould65@gmail.com,Your Geo Zone Selection [Sonoma County],75993.0,2.0
+156,frankgould65@gmail.com,Your Geo Zone Selection [Marin County],75993.0,2.0
+157,frankgould65@gmail.com,Your Geo Zone Selection [Napa County],75993.0,2.0
+158,frankgould65@gmail.com,Your Geo Zone Selection [Solano County],75993.0,2.0
+159,frankgould65@gmail.com,Your Geo Zone Selection [Contra Costa County],75993.0,3.0
+160,frankgould65@gmail.com,Your Geo Zone Selection [Alameda County],75993.0,3.0
+161,frankgould65@gmail.com,Your Geo Zone Selection [Santa Clara County],75993.0,3.0
+162,frankgould65@gmail.com,Your Geo Zone Selection [Santa Cruz County],75993.0,2.0
+163,frankgould65@gmail.com,Your Geo Zone Selection [San Mateo County],75993.0,3.0
+164,frankgould65@gmail.com,Your Geo Zone Selection [San Francisco County],75993.0,2.0
+165,khaledomar11@hotmail.com,Your Geo Zone Selection [Lake County],114171.0,1.0
+166,khaledomar11@hotmail.com,Your Geo Zone Selection [Sonoma County],114171.0,1.0
+167,khaledomar11@hotmail.com,Your Geo Zone Selection [Marin County],114171.0,1.0
+168,khaledomar11@hotmail.com,Your Geo Zone Selection [Napa County],114171.0,1.0
+169,khaledomar11@hotmail.com,Your Geo Zone Selection [Solano County],114171.0,1.0
+170,khaledomar11@hotmail.com,Your Geo Zone Selection [Contra Costa County],114171.0,1.0
+171,khaledomar11@hotmail.com,Your Geo Zone Selection [Alameda County],114171.0,3.0
+172,khaledomar11@hotmail.com,Your Geo Zone Selection [Santa Clara County],114171.0,1.0
+173,khaledomar11@hotmail.com,Your Geo Zone Selection [Santa Cruz County],114171.0,1.0
+174,khaledomar11@hotmail.com,Your Geo Zone Selection [San Mateo County],114171.0,2.0
+175,khaledomar11@hotmail.com,Your Geo Zone Selection [San Francisco County],114171.0,3.0
+176,bodiesbydesign2002@yahoo.com,Your Geo Zone Selection [Lake County],116530.0,1.0
+177,bodiesbydesign2002@yahoo.com,Your Geo Zone Selection [Sonoma County],116530.0,1.0
+178,bodiesbydesign2002@yahoo.com,Your Geo Zone Selection [Marin County],116530.0,1.0
+179,bodiesbydesign2002@yahoo.com,Your Geo Zone Selection [Napa County],116530.0,1.0
+180,bodiesbydesign2002@yahoo.com,Your Geo Zone Selection [Solano County],116530.0,1.0
+181,bodiesbydesign2002@yahoo.com,Your Geo Zone Selection [Contra Costa County],116530.0,1.0
+182,bodiesbydesign2002@yahoo.com,Your Geo Zone Selection [Alameda County],116530.0,3.0
+183,bodiesbydesign2002@yahoo.com,Your Geo Zone Selection [Santa Clara County],116530.0,3.0
+184,bodiesbydesign2002@yahoo.com,Your Geo Zone Selection [Santa Cruz County],116530.0,2.0
+185,bodiesbydesign2002@yahoo.com,Your Geo Zone Selection [San Mateo County],116530.0,3.0
+186,bodiesbydesign2002@yahoo.com,Your Geo Zone Selection [San Francisco County],116530.0,3.0
+187,elmach0918@gmail.com,Your Geo Zone Selection [Lake County],122212.0,1.0
+188,elmach0918@gmail.com,Your Geo Zone Selection [Sonoma County],122212.0,1.0
+189,elmach0918@gmail.com,Your Geo Zone Selection [Marin County],122212.0,1.0
+190,elmach0918@gmail.com,Your Geo Zone Selection [Napa County],122212.0,1.0
+191,elmach0918@gmail.com,Your Geo Zone Selection [Solano County],122212.0,1.0
+192,elmach0918@gmail.com,Your Geo Zone Selection [Contra Costa County],122212.0,1.0
+193,elmach0918@gmail.com,Your Geo Zone Selection [Alameda County],122212.0,3.0
+194,elmach0918@gmail.com,Your Geo Zone Selection [Santa Clara County],122212.0,1.0
+195,elmach0918@gmail.com,Your Geo Zone Selection [Santa Cruz County],122212.0,1.0
+196,elmach0918@gmail.com,Your Geo Zone Selection [San Mateo County],122212.0,1.0
+197,elmach0918@gmail.com,Your Geo Zone Selection [San Francisco County],122212.0,1.0
+198,jarnelle7@yahoo.com,Your Geo Zone Selection [Lake County],87321.0,1.0
+199,jarnelle7@yahoo.com,Your Geo Zone Selection [Sonoma County],87321.0,1.0
+200,jarnelle7@yahoo.com,Your Geo Zone Selection [Marin County],87321.0,2.0
+201,jarnelle7@yahoo.com,Your Geo Zone Selection [Napa County],87321.0,2.0
+202,jarnelle7@yahoo.com,Your Geo Zone Selection [Solano County],87321.0,1.0
+203,jarnelle7@yahoo.com,Your Geo Zone Selection [Contra Costa County],87321.0,2.0
+204,jarnelle7@yahoo.com,Your Geo Zone Selection [Alameda County],87321.0,2.0
+205,jarnelle7@yahoo.com,Your Geo Zone Selection [Santa Clara County],87321.0,3.0
+206,jarnelle7@yahoo.com,Your Geo Zone Selection [Santa Cruz County],87321.0,3.0
+207,jarnelle7@yahoo.com,Your Geo Zone Selection [San Mateo County],87321.0,2.0
+208,jarnelle7@yahoo.com,Your Geo Zone Selection [San Francisco County],87321.0,2.0
+209,wingzdriver@gmail.com,Your Geo Zone Selection [Lake County],101066.0,1.0
+210,wingzdriver@gmail.com,Your Geo Zone Selection [Sonoma County],101066.0,2.0
+211,wingzdriver@gmail.com,Your Geo Zone Selection [Marin County],101066.0,2.0
+212,wingzdriver@gmail.com,Your Geo Zone Selection [Napa County],101066.0,2.0
+213,wingzdriver@gmail.com,Your Geo Zone Selection [Solano County],101066.0,2.0
+214,wingzdriver@gmail.com,Your Geo Zone Selection [Contra Costa County],101066.0,3.0
+215,wingzdriver@gmail.com,Your Geo Zone Selection [Alameda County],101066.0,3.0
+216,wingzdriver@gmail.com,Your Geo Zone Selection [Santa Clara County],101066.0,3.0
+217,wingzdriver@gmail.com,Your Geo Zone Selection [Santa Cruz County],101066.0,2.0
+218,wingzdriver@gmail.com,Your Geo Zone Selection [San Mateo County],101066.0,3.0
+219,wingzdriver@gmail.com,Your Geo Zone Selection [San Francisco County],101066.0,2.0
+220,Vicbali@hotmail.com,Your Geo Zone Selection [Lake County],,2.0
+221,Vicbali@hotmail.com,Your Geo Zone Selection [Sonoma County],,2.0
+222,Vicbali@hotmail.com,Your Geo Zone Selection [Marin County],,2.0
+223,Vicbali@hotmail.com,Your Geo Zone Selection [Napa County],,3.0
+224,Vicbali@hotmail.com,Your Geo Zone Selection [Solano County],,3.0
+225,Vicbali@hotmail.com,Your Geo Zone Selection [Contra Costa County],,3.0
+226,Vicbali@hotmail.com,Your Geo Zone Selection [Alameda County],,3.0
+227,Vicbali@hotmail.com,Your Geo Zone Selection [Santa Clara County],,2.0
+228,Vicbali@hotmail.com,Your Geo Zone Selection [Santa Cruz County],,2.0
+229,Vicbali@hotmail.com,Your Geo Zone Selection [San Mateo County],,2.0
+230,Vicbali@hotmail.com,Your Geo Zone Selection [San Francisco County],,2.0
+231,dsescobar@gmail.com,Your Geo Zone Selection [Lake County],94930.0,2.0
+232,dsescobar@gmail.com,Your Geo Zone Selection [Sonoma County],94930.0,2.0
+233,dsescobar@gmail.com,Your Geo Zone Selection [Marin County],94930.0,2.0
+234,dsescobar@gmail.com,Your Geo Zone Selection [Napa County],94930.0,2.0
+235,dsescobar@gmail.com,Your Geo Zone Selection [Solano County],94930.0,2.0
+236,dsescobar@gmail.com,Your Geo Zone Selection [Contra Costa County],94930.0,3.0
+237,dsescobar@gmail.com,Your Geo Zone Selection [Alameda County],94930.0,3.0
+238,dsescobar@gmail.com,Your Geo Zone Selection [Santa Clara County],94930.0,3.0
+239,dsescobar@gmail.com,Your Geo Zone Selection [Santa Cruz County],94930.0,2.0
+240,dsescobar@gmail.com,Your Geo Zone Selection [San Mateo County],94930.0,2.0
+241,dsescobar@gmail.com,Your Geo Zone Selection [San Francisco County],94930.0,2.0
+242,ramzy283@gmail.com,Your Geo Zone Selection [Lake County],54519.0,1.0
+243,ramzy283@gmail.com,Your Geo Zone Selection [Sonoma County],54519.0,1.0
+244,ramzy283@gmail.com,Your Geo Zone Selection [Marin County],54519.0,1.0
+245,ramzy283@gmail.com,Your Geo Zone Selection [Napa County],54519.0,1.0
+246,ramzy283@gmail.com,Your Geo Zone Selection [Solano County],54519.0,1.0
+247,ramzy283@gmail.com,Your Geo Zone Selection [Contra Costa County],54519.0,3.0
+248,ramzy283@gmail.com,Your Geo Zone Selection [Alameda County],54519.0,3.0
+249,ramzy283@gmail.com,Your Geo Zone Selection [Santa Clara County],54519.0,1.0
+250,ramzy283@gmail.com,Your Geo Zone Selection [Santa Cruz County],54519.0,1.0
+251,ramzy283@gmail.com,Your Geo Zone Selection [San Mateo County],54519.0,1.0
+252,ramzy283@gmail.com,Your Geo Zone Selection [San Francisco County],54519.0,3.0
+253,wy247@yahoo.com,Your Geo Zone Selection [Lake County],88825.0,1.0
+254,wy247@yahoo.com,Your Geo Zone Selection [Sonoma County],88825.0,1.0
+255,wy247@yahoo.com,Your Geo Zone Selection [Marin County],88825.0,1.0
+256,wy247@yahoo.com,Your Geo Zone Selection [Napa County],88825.0,1.0
+257,wy247@yahoo.com,Your Geo Zone Selection [Solano County],88825.0,1.0
+258,wy247@yahoo.com,Your Geo Zone Selection [Contra Costa County],88825.0,1.0
+259,wy247@yahoo.com,Your Geo Zone Selection [Alameda County],88825.0,1.0
+260,wy247@yahoo.com,Your Geo Zone Selection [Santa Clara County],88825.0,1.0
+261,wy247@yahoo.com,Your Geo Zone Selection [Santa Cruz County],88825.0,1.0
+262,wy247@yahoo.com,Your Geo Zone Selection [San Mateo County],88825.0,3.0
+263,wy247@yahoo.com,Your Geo Zone Selection [San Francisco County],88825.0,3.0
+264,jacquay_davis@yahoo.com,Your Geo Zone Selection [Lake County],75965.0,1.0
+265,jacquay_davis@yahoo.com,Your Geo Zone Selection [Sonoma County],75965.0,3.0
+266,jacquay_davis@yahoo.com,Your Geo Zone Selection [Marin County],75965.0,3.0
+267,jacquay_davis@yahoo.com,Your Geo Zone Selection [Napa County],75965.0,3.0
+268,jacquay_davis@yahoo.com,Your Geo Zone Selection [Solano County],75965.0,3.0
+269,jacquay_davis@yahoo.com,Your Geo Zone Selection [Contra Costa County],75965.0,3.0
+270,jacquay_davis@yahoo.com,Your Geo Zone Selection [Alameda County],75965.0,3.0
+271,jacquay_davis@yahoo.com,Your Geo Zone Selection [Santa Clara County],75965.0,1.0
+272,jacquay_davis@yahoo.com,Your Geo Zone Selection [Santa Cruz County],75965.0,1.0
+273,jacquay_davis@yahoo.com,Your Geo Zone Selection [San Mateo County],75965.0,2.0
+274,jacquay_davis@yahoo.com,Your Geo Zone Selection [San Francisco County],75965.0,3.0
+275,johnejk@yahoo.com,Your Geo Zone Selection [Lake County],56434.0,2.0
+276,johnejk@yahoo.com,Your Geo Zone Selection [Sonoma County],56434.0,2.0
+277,johnejk@yahoo.com,Your Geo Zone Selection [Marin County],56434.0,2.0
+278,johnejk@yahoo.com,Your Geo Zone Selection [Napa County],56434.0,2.0
+279,johnejk@yahoo.com,Your Geo Zone Selection [Solano County],56434.0,2.0
+280,johnejk@yahoo.com,Your Geo Zone Selection [Contra Costa County],56434.0,2.0
+281,johnejk@yahoo.com,Your Geo Zone Selection [Alameda County],56434.0,3.0
+282,johnejk@yahoo.com,Your Geo Zone Selection [Santa Clara County],56434.0,3.0
+283,johnejk@yahoo.com,Your Geo Zone Selection [Santa Cruz County],56434.0,2.0
+284,johnejk@yahoo.com,Your Geo Zone Selection [San Mateo County],56434.0,3.0
+285,johnejk@yahoo.com,Your Geo Zone Selection [San Francisco County],56434.0,2.0
+286,tjturner.88@hotmail.com,Your Geo Zone Selection [Lake County],,1.0
+287,tjturner.88@hotmail.com,Your Geo Zone Selection [Sonoma County],,1.0
+288,tjturner.88@hotmail.com,Your Geo Zone Selection [Marin County],,1.0
+289,tjturner.88@hotmail.com,Your Geo Zone Selection [Napa County],,1.0
+290,tjturner.88@hotmail.com,Your Geo Zone Selection [Solano County],,1.0
+291,tjturner.88@hotmail.com,Your Geo Zone Selection [Contra Costa County],,1.0
+292,tjturner.88@hotmail.com,Your Geo Zone Selection [Alameda County],,1.0
+293,tjturner.88@hotmail.com,Your Geo Zone Selection [Santa Clara County],,3.0
+294,tjturner.88@hotmail.com,Your Geo Zone Selection [Santa Cruz County],,1.0
+295,tjturner.88@hotmail.com,Your Geo Zone Selection [San Mateo County],,2.0
+296,tjturner.88@hotmail.com,Your Geo Zone Selection [San Francisco County],,1.0
+297,khalidmhaniff@hotmail.com,Your Geo Zone Selection [Lake County],114340.0,2.0
+298,khalidmhaniff@hotmail.com,Your Geo Zone Selection [Sonoma County],114340.0,3.0
+299,khalidmhaniff@hotmail.com,Your Geo Zone Selection [Marin County],114340.0,3.0
+300,khalidmhaniff@hotmail.com,Your Geo Zone Selection [Napa County],114340.0,2.0
+301,khalidmhaniff@hotmail.com,Your Geo Zone Selection [Solano County],114340.0,2.0
+302,khalidmhaniff@hotmail.com,Your Geo Zone Selection [Contra Costa County],114340.0,3.0
+303,khalidmhaniff@hotmail.com,Your Geo Zone Selection [Alameda County],114340.0,2.0
+304,khalidmhaniff@hotmail.com,Your Geo Zone Selection [Santa Clara County],114340.0,2.0
+305,khalidmhaniff@hotmail.com,Your Geo Zone Selection [Santa Cruz County],114340.0,2.0
+306,khalidmhaniff@hotmail.com,Your Geo Zone Selection [San Mateo County],114340.0,2.0
+307,khalidmhaniff@hotmail.com,Your Geo Zone Selection [San Francisco County],114340.0,3.0
+308,tanjaingram@gmail.com,Your Geo Zone Selection [Lake County],65545.0,1.0
+309,tanjaingram@gmail.com,Your Geo Zone Selection [Sonoma County],65545.0,1.0
+310,tanjaingram@gmail.com,Your Geo Zone Selection [Marin County],65545.0,2.0
+311,tanjaingram@gmail.com,Your Geo Zone Selection [Napa County],65545.0,2.0
+312,tanjaingram@gmail.com,Your Geo Zone Selection [Solano County],65545.0,3.0
+313,tanjaingram@gmail.com,Your Geo Zone Selection [Contra Costa County],65545.0,3.0
+314,tanjaingram@gmail.com,Your Geo Zone Selection [Alameda County],65545.0,3.0
+315,tanjaingram@gmail.com,Your Geo Zone Selection [Santa Clara County],65545.0,2.0
+316,tanjaingram@gmail.com,Your Geo Zone Selection [Santa Cruz County],65545.0,2.0
+317,tanjaingram@gmail.com,Your Geo Zone Selection [San Mateo County],65545.0,2.0
+318,tanjaingram@gmail.com,Your Geo Zone Selection [San Francisco County],65545.0,3.0
+319,aa4845@gmail.com,Your Geo Zone Selection [Lake County],51367.0,1.0
+320,aa4845@gmail.com,Your Geo Zone Selection [Sonoma County],51367.0,1.0
+321,aa4845@gmail.com,Your Geo Zone Selection [Marin County],51367.0,2.0
+322,aa4845@gmail.com,Your Geo Zone Selection [Napa County],51367.0,1.0
+323,aa4845@gmail.com,Your Geo Zone Selection [Solano County],51367.0,1.0
+324,aa4845@gmail.com,Your Geo Zone Selection [Contra Costa County],51367.0,1.0
+325,aa4845@gmail.com,Your Geo Zone Selection [Alameda County],51367.0,2.0
+326,aa4845@gmail.com,Your Geo Zone Selection [Santa Clara County],51367.0,3.0
+327,aa4845@gmail.com,Your Geo Zone Selection [Santa Cruz County],51367.0,3.0
+328,aa4845@gmail.com,Your Geo Zone Selection [San Mateo County],51367.0,3.0
+329,aa4845@gmail.com,Your Geo Zone Selection [San Francisco County],51367.0,3.0
+330,prasanttripathy@comcast.net,Your Geo Zone Selection [Lake County],67116.0,2.0
+331,prasanttripathy@comcast.net,Your Geo Zone Selection [Sonoma County],67116.0,2.0
+332,prasanttripathy@comcast.net,Your Geo Zone Selection [Marin County],67116.0,3.0
+333,prasanttripathy@comcast.net,Your Geo Zone Selection [Napa County],67116.0,2.0
+334,prasanttripathy@comcast.net,Your Geo Zone Selection [Solano County],67116.0,2.0
+335,prasanttripathy@comcast.net,Your Geo Zone Selection [Contra Costa County],67116.0,3.0
+336,prasanttripathy@comcast.net,Your Geo Zone Selection [Alameda County],67116.0,3.0
+337,prasanttripathy@comcast.net,Your Geo Zone Selection [Santa Clara County],67116.0,2.0
+338,prasanttripathy@comcast.net,Your Geo Zone Selection [Santa Cruz County],67116.0,2.0
+339,prasanttripathy@comcast.net,Your Geo Zone Selection [San Mateo County],67116.0,2.0
+340,prasanttripathy@comcast.net,Your Geo Zone Selection [San Francisco County],67116.0,3.0
+341,conditioningplus@gmail.com,Your Geo Zone Selection [Lake County],73103.0,1.0
+342,conditioningplus@gmail.com,Your Geo Zone Selection [Sonoma County],73103.0,1.0
+343,conditioningplus@gmail.com,Your Geo Zone Selection [Marin County],73103.0,2.0
+344,conditioningplus@gmail.com,Your Geo Zone Selection [Napa County],73103.0,1.0
+345,conditioningplus@gmail.com,Your Geo Zone Selection [Solano County],73103.0,1.0
+346,conditioningplus@gmail.com,Your Geo Zone Selection [Contra Costa County],73103.0,1.0
+347,conditioningplus@gmail.com,Your Geo Zone Selection [Alameda County],73103.0,2.0
+348,conditioningplus@gmail.com,Your Geo Zone Selection [Santa Clara County],73103.0,1.0
+349,conditioningplus@gmail.com,Your Geo Zone Selection [Santa Cruz County],73103.0,1.0
+350,conditioningplus@gmail.com,Your Geo Zone Selection [San Mateo County],73103.0,2.0
+351,conditioningplus@gmail.com,Your Geo Zone Selection [San Francisco County],73103.0,3.0
+352,joncogo@gmail.com,Your Geo Zone Selection [Lake County],101074.0,1.0
+353,joncogo@gmail.com,Your Geo Zone Selection [Sonoma County],101074.0,1.0
+354,joncogo@gmail.com,Your Geo Zone Selection [Marin County],101074.0,1.0
+355,joncogo@gmail.com,Your Geo Zone Selection [Napa County],101074.0,1.0
+356,joncogo@gmail.com,Your Geo Zone Selection [Solano County],101074.0,1.0
+357,joncogo@gmail.com,Your Geo Zone Selection [Contra Costa County],101074.0,3.0
+358,joncogo@gmail.com,Your Geo Zone Selection [Alameda County],101074.0,2.0
+359,joncogo@gmail.com,Your Geo Zone Selection [Santa Clara County],101074.0,1.0
+360,joncogo@gmail.com,Your Geo Zone Selection [Santa Cruz County],101074.0,1.0
+361,joncogo@gmail.com,Your Geo Zone Selection [San Mateo County],101074.0,1.0
+362,joncogo@gmail.com,Your Geo Zone Selection [San Francisco County],101074.0,1.0
+363,kshiver@mac.com,Your Geo Zone Selection [Lake County],33738.0,1.0
+364,kshiver@mac.com,Your Geo Zone Selection [Sonoma County],33738.0,1.0
+365,kshiver@mac.com,Your Geo Zone Selection [Marin County],33738.0,1.0
+366,kshiver@mac.com,Your Geo Zone Selection [Napa County],33738.0,1.0
+367,kshiver@mac.com,Your Geo Zone Selection [Solano County],33738.0,1.0
+368,kshiver@mac.com,Your Geo Zone Selection [Contra Costa County],33738.0,1.0
+369,kshiver@mac.com,Your Geo Zone Selection [Alameda County],33738.0,2.0
+370,kshiver@mac.com,Your Geo Zone Selection [Santa Clara County],33738.0,3.0
+371,kshiver@mac.com,Your Geo Zone Selection [Santa Cruz County],33738.0,2.0
+372,kshiver@mac.com,Your Geo Zone Selection [San Mateo County],33738.0,3.0
+373,kshiver@mac.com,Your Geo Zone Selection [San Francisco County],33738.0,3.0
+374,kshiver@mac.com,Your Geo Zone Selection [Lake County],34759.0,1.0
+375,kshiver@mac.com,Your Geo Zone Selection [Sonoma County],34759.0,1.0
+376,kshiver@mac.com,Your Geo Zone Selection [Marin County],34759.0,1.0
+377,kshiver@mac.com,Your Geo Zone Selection [Napa County],34759.0,1.0
+378,kshiver@mac.com,Your Geo Zone Selection [Solano County],34759.0,1.0
+379,kshiver@mac.com,Your Geo Zone Selection [Contra Costa County],34759.0,1.0
+380,kshiver@mac.com,Your Geo Zone Selection [Alameda County],34759.0,2.0
+381,kshiver@mac.com,Your Geo Zone Selection [Santa Clara County],34759.0,3.0
+382,kshiver@mac.com,Your Geo Zone Selection [Santa Cruz County],34759.0,2.0
+383,kshiver@mac.com,Your Geo Zone Selection [San Mateo County],34759.0,3.0
+384,kshiver@mac.com,Your Geo Zone Selection [San Francisco County],34759.0,3.0
+385,rtyper@gmail.com,Your Geo Zone Selection [Lake County],128159.0,1.0
+386,rtyper@gmail.com,Your Geo Zone Selection [Sonoma County],128159.0,1.0
+387,rtyper@gmail.com,Your Geo Zone Selection [Marin County],128159.0,2.0
+388,rtyper@gmail.com,Your Geo Zone Selection [Napa County],128159.0,1.0
+389,rtyper@gmail.com,Your Geo Zone Selection [Solano County],128159.0,1.0
+390,rtyper@gmail.com,Your Geo Zone Selection [Contra Costa County],128159.0,2.0
+391,rtyper@gmail.com,Your Geo Zone Selection [Alameda County],128159.0,3.0
+392,rtyper@gmail.com,Your Geo Zone Selection [Santa Clara County],128159.0,2.0
+393,rtyper@gmail.com,Your Geo Zone Selection [Santa Cruz County],128159.0,1.0
+394,rtyper@gmail.com,Your Geo Zone Selection [San Mateo County],128159.0,2.0
+395,rtyper@gmail.com,Your Geo Zone Selection [San Francisco County],128159.0,3.0
+396,vandykeroth@gmail.com,Your Geo Zone Selection [Lake County],69846.0,1.0
+397,vandykeroth@gmail.com,Your Geo Zone Selection [Sonoma County],69846.0,1.0
+398,vandykeroth@gmail.com,Your Geo Zone Selection [Marin County],69846.0,3.0
+399,vandykeroth@gmail.com,Your Geo Zone Selection [Napa County],69846.0,1.0
+400,vandykeroth@gmail.com,Your Geo Zone Selection [Solano County],69846.0,2.0
+401,vandykeroth@gmail.com,Your Geo Zone Selection [Contra Costa County],69846.0,2.0
+402,vandykeroth@gmail.com,Your Geo Zone Selection [Alameda County],69846.0,3.0
+403,vandykeroth@gmail.com,Your Geo Zone Selection [Santa Clara County],69846.0,2.0
+404,vandykeroth@gmail.com,Your Geo Zone Selection [Santa Cruz County],69846.0,1.0
+405,vandykeroth@gmail.com,Your Geo Zone Selection [San Mateo County],69846.0,3.0
+406,vandykeroth@gmail.com,Your Geo Zone Selection [San Francisco County],69846.0,3.0
+407,NOMI70US@YAHOO.COM,Your Geo Zone Selection [Lake County],,3.0
+408,NOMI70US@YAHOO.COM,Your Geo Zone Selection [Sonoma County],,3.0
+409,NOMI70US@YAHOO.COM,Your Geo Zone Selection [Marin County],,3.0
+410,NOMI70US@YAHOO.COM,Your Geo Zone Selection [Napa County],,3.0
+411,NOMI70US@YAHOO.COM,Your Geo Zone Selection [Solano County],,3.0
+412,NOMI70US@YAHOO.COM,Your Geo Zone Selection [Contra Costa County],,3.0
+413,NOMI70US@YAHOO.COM,Your Geo Zone Selection [Alameda County],,3.0
+414,NOMI70US@YAHOO.COM,Your Geo Zone Selection [Santa Clara County],,2.0
+415,NOMI70US@YAHOO.COM,Your Geo Zone Selection [Santa Cruz County],,2.0
+416,NOMI70US@YAHOO.COM,Your Geo Zone Selection [San Mateo County],,2.0
+417,NOMI70US@YAHOO.COM,Your Geo Zone Selection [San Francisco County],,3.0
+418,zachkhans@gmail.com,Your Geo Zone Selection [Lake County],81958.0,2.0
+419,zachkhans@gmail.com,Your Geo Zone Selection [Sonoma County],81958.0,2.0
+420,zachkhans@gmail.com,Your Geo Zone Selection [Marin County],81958.0,3.0
+421,zachkhans@gmail.com,Your Geo Zone Selection [Napa County],81958.0,2.0
+422,zachkhans@gmail.com,Your Geo Zone Selection [Solano County],81958.0,2.0
+423,zachkhans@gmail.com,Your Geo Zone Selection [Contra Costa County],81958.0,3.0
+424,zachkhans@gmail.com,Your Geo Zone Selection [Alameda County],81958.0,3.0
+425,zachkhans@gmail.com,Your Geo Zone Selection [Santa Clara County],81958.0,2.0
+426,zachkhans@gmail.com,Your Geo Zone Selection [Santa Cruz County],81958.0,2.0
+427,zachkhans@gmail.com,Your Geo Zone Selection [San Mateo County],81958.0,3.0
+428,zachkhans@gmail.com,Your Geo Zone Selection [San Francisco County],81958.0,3.0
+429,Jfgolf77@yahoo.com,Your Geo Zone Selection [Lake County],,2.0
+430,Jfgolf77@yahoo.com,Your Geo Zone Selection [Sonoma County],,2.0
+431,Jfgolf77@yahoo.com,Your Geo Zone Selection [Marin County],,3.0
+432,Jfgolf77@yahoo.com,Your Geo Zone Selection [Napa County],,2.0
+433,Jfgolf77@yahoo.com,Your Geo Zone Selection [Solano County],,2.0
+434,Jfgolf77@yahoo.com,Your Geo Zone Selection [Contra Costa County],,3.0
+435,Jfgolf77@yahoo.com,Your Geo Zone Selection [Alameda County],,2.0
+436,Jfgolf77@yahoo.com,Your Geo Zone Selection [Santa Clara County],,1.0
+437,Jfgolf77@yahoo.com,Your Geo Zone Selection [Santa Cruz County],,1.0
+438,Jfgolf77@yahoo.com,Your Geo Zone Selection [San Mateo County],,2.0
+439,Jfgolf77@yahoo.com,Your Geo Zone Selection [San Francisco County],,3.0
+440,Jimmy.Pohan15@yahoo.com,Your Geo Zone Selection [Lake County],,2.0
+441,Jimmy.Pohan15@yahoo.com,Your Geo Zone Selection [Sonoma County],,2.0
+442,Jimmy.Pohan15@yahoo.com,Your Geo Zone Selection [Marin County],,2.0
+443,Jimmy.Pohan15@yahoo.com,Your Geo Zone Selection [Napa County],,2.0
+444,Jimmy.Pohan15@yahoo.com,Your Geo Zone Selection [Solano County],,2.0
+445,Jimmy.Pohan15@yahoo.com,Your Geo Zone Selection [Contra Costa County],,2.0
+446,Jimmy.Pohan15@yahoo.com,Your Geo Zone Selection [Alameda County],,2.0
+447,Jimmy.Pohan15@yahoo.com,Your Geo Zone Selection [Santa Clara County],,2.0
+448,Jimmy.Pohan15@yahoo.com,Your Geo Zone Selection [Santa Cruz County],,2.0
+449,Jimmy.Pohan15@yahoo.com,Your Geo Zone Selection [San Mateo County],,2.0
+450,Jimmy.Pohan15@yahoo.com,Your Geo Zone Selection [San Francisco County],,2.0
+451,askit137@yahoo.com,Your Geo Zone Selection [Lake County],110044.0,1.0
+452,askit137@yahoo.com,Your Geo Zone Selection [Sonoma County],110044.0,1.0
+453,askit137@yahoo.com,Your Geo Zone Selection [Marin County],110044.0,1.0
+454,askit137@yahoo.com,Your Geo Zone Selection [Napa County],110044.0,1.0
+455,askit137@yahoo.com,Your Geo Zone Selection [Solano County],110044.0,1.0
+456,askit137@yahoo.com,Your Geo Zone Selection [Contra Costa County],110044.0,2.0
+457,askit137@yahoo.com,Your Geo Zone Selection [Alameda County],110044.0,3.0
+458,askit137@yahoo.com,Your Geo Zone Selection [Santa Clara County],110044.0,3.0
+459,askit137@yahoo.com,Your Geo Zone Selection [Santa Cruz County],110044.0,3.0
+460,askit137@yahoo.com,Your Geo Zone Selection [San Mateo County],110044.0,3.0
+461,askit137@yahoo.com,Your Geo Zone Selection [San Francisco County],110044.0,3.0
+462,eyeswithin@yahoo.com,Your Geo Zone Selection [Lake County],67649.0,1.0
+463,eyeswithin@yahoo.com,Your Geo Zone Selection [Sonoma County],67649.0,2.0
+464,eyeswithin@yahoo.com,Your Geo Zone Selection [Marin County],67649.0,2.0
+465,eyeswithin@yahoo.com,Your Geo Zone Selection [Napa County],67649.0,2.0
+466,eyeswithin@yahoo.com,Your Geo Zone Selection [Solano County],67649.0,2.0
+467,eyeswithin@yahoo.com,Your Geo Zone Selection [Contra Costa County],67649.0,3.0
+468,eyeswithin@yahoo.com,Your Geo Zone Selection [Alameda County],67649.0,3.0
+469,eyeswithin@yahoo.com,Your Geo Zone Selection [Santa Clara County],67649.0,3.0
+470,eyeswithin@yahoo.com,Your Geo Zone Selection [Santa Cruz County],67649.0,3.0
+471,eyeswithin@yahoo.com,Your Geo Zone Selection [San Mateo County],67649.0,2.0
+472,eyeswithin@yahoo.com,Your Geo Zone Selection [San Francisco County],67649.0,2.0
+473,edgarldiaz@yahoo.com,Your Geo Zone Selection [Lake County],65032.0,1.0
+474,edgarldiaz@yahoo.com,Your Geo Zone Selection [Sonoma County],65032.0,1.0
+475,edgarldiaz@yahoo.com,Your Geo Zone Selection [Marin County],65032.0,3.0
+476,edgarldiaz@yahoo.com,Your Geo Zone Selection [Napa County],65032.0,1.0
+477,edgarldiaz@yahoo.com,Your Geo Zone Selection [Solano County],65032.0,1.0
+478,edgarldiaz@yahoo.com,Your Geo Zone Selection [Contra Costa County],65032.0,1.0
+479,edgarldiaz@yahoo.com,Your Geo Zone Selection [Alameda County],65032.0,3.0
+480,edgarldiaz@yahoo.com,Your Geo Zone Selection [Santa Clara County],65032.0,1.0
+481,edgarldiaz@yahoo.com,Your Geo Zone Selection [Santa Cruz County],65032.0,1.0
+482,edgarldiaz@yahoo.com,Your Geo Zone Selection [San Mateo County],65032.0,3.0
+483,edgarldiaz@yahoo.com,Your Geo Zone Selection [San Francisco County],65032.0,3.0
+484,irentphotobooths@gmail.com,Your Geo Zone Selection [Lake County],50189.0,1.0
+485,irentphotobooths@gmail.com,Your Geo Zone Selection [Sonoma County],50189.0,1.0
+486,irentphotobooths@gmail.com,Your Geo Zone Selection [Marin County],50189.0,1.0
+487,irentphotobooths@gmail.com,Your Geo Zone Selection [Napa County],50189.0,1.0
+488,irentphotobooths@gmail.com,Your Geo Zone Selection [Solano County],50189.0,1.0
+489,irentphotobooths@gmail.com,Your Geo Zone Selection [Contra Costa County],50189.0,1.0
+490,irentphotobooths@gmail.com,Your Geo Zone Selection [Alameda County],50189.0,1.0
+491,irentphotobooths@gmail.com,Your Geo Zone Selection [Santa Clara County],50189.0,1.0
+492,irentphotobooths@gmail.com,Your Geo Zone Selection [Santa Cruz County],50189.0,1.0
+493,irentphotobooths@gmail.com,Your Geo Zone Selection [San Mateo County],50189.0,2.0
+494,irentphotobooths@gmail.com,Your Geo Zone Selection [San Francisco County],50189.0,2.0
+495,drive@swapability.com,Your Geo Zone Selection [Lake County],118728.0,1.0
+496,drive@swapability.com,Your Geo Zone Selection [Sonoma County],118728.0,1.0
+497,drive@swapability.com,Your Geo Zone Selection [Marin County],118728.0,1.0
+498,drive@swapability.com,Your Geo Zone Selection [Napa County],118728.0,1.0
+499,drive@swapability.com,Your Geo Zone Selection [Solano County],118728.0,1.0
+500,drive@swapability.com,Your Geo Zone Selection [Contra Costa County],118728.0,1.0
+501,drive@swapability.com,Your Geo Zone Selection [Alameda County],118728.0,1.0
+502,drive@swapability.com,Your Geo Zone Selection [Santa Clara County],118728.0,1.0
+503,drive@swapability.com,Your Geo Zone Selection [Santa Cruz County],118728.0,1.0
+504,drive@swapability.com,Your Geo Zone Selection [San Mateo County],118728.0,1.0
+505,drive@swapability.com,Your Geo Zone Selection [San Francisco County],118728.0,3.0
+506,jeremiahang88@yahoo.com,Your Geo Zone Selection [Lake County],114558.0,1.0
+507,jeremiahang88@yahoo.com,Your Geo Zone Selection [Sonoma County],114558.0,1.0
+508,jeremiahang88@yahoo.com,Your Geo Zone Selection [Marin County],114558.0,1.0
+509,jeremiahang88@yahoo.com,Your Geo Zone Selection [Napa County],114558.0,1.0
+510,jeremiahang88@yahoo.com,Your Geo Zone Selection [Solano County],114558.0,1.0
+511,jeremiahang88@yahoo.com,Your Geo Zone Selection [Contra Costa County],114558.0,1.0
+512,jeremiahang88@yahoo.com,Your Geo Zone Selection [Alameda County],114558.0,1.0
+513,jeremiahang88@yahoo.com,Your Geo Zone Selection [Santa Clara County],114558.0,1.0
+514,jeremiahang88@yahoo.com,Your Geo Zone Selection [Santa Cruz County],114558.0,1.0
+515,jeremiahang88@yahoo.com,Your Geo Zone Selection [San Mateo County],114558.0,3.0
+516,jeremiahang88@yahoo.com,Your Geo Zone Selection [San Francisco County],114558.0,3.0
+517,mittal.max.mm@gmail.com,Your Geo Zone Selection [Lake County],142158.0,2.0
+518,mittal.max.mm@gmail.com,Your Geo Zone Selection [Sonoma County],142158.0,2.0
+519,mittal.max.mm@gmail.com,Your Geo Zone Selection [Marin County],142158.0,2.0
+520,mittal.max.mm@gmail.com,Your Geo Zone Selection [Napa County],142158.0,2.0
+521,mittal.max.mm@gmail.com,Your Geo Zone Selection [Solano County],142158.0,2.0
+522,mittal.max.mm@gmail.com,Your Geo Zone Selection [Contra Costa County],142158.0,3.0
+523,mittal.max.mm@gmail.com,Your Geo Zone Selection [Alameda County],142158.0,3.0
+524,mittal.max.mm@gmail.com,Your Geo Zone Selection [Santa Clara County],142158.0,2.0
+525,mittal.max.mm@gmail.com,Your Geo Zone Selection [Santa Cruz County],142158.0,2.0
+526,mittal.max.mm@gmail.com,Your Geo Zone Selection [San Mateo County],142158.0,3.0
+527,mittal.max.mm@gmail.com,Your Geo Zone Selection [San Francisco County],142158.0,3.0
+528,reietss2005@yahoo.com,Your Geo Zone Selection [Lake County],83605.0,2.0
+529,reietss2005@yahoo.com,Your Geo Zone Selection [Sonoma County],83605.0,2.0
+530,reietss2005@yahoo.com,Your Geo Zone Selection [Marin County],83605.0,3.0
+531,reietss2005@yahoo.com,Your Geo Zone Selection [Napa County],83605.0,2.0
+532,reietss2005@yahoo.com,Your Geo Zone Selection [Solano County],83605.0,2.0
+533,reietss2005@yahoo.com,Your Geo Zone Selection [Contra Costa County],83605.0,2.0
+534,reietss2005@yahoo.com,Your Geo Zone Selection [Alameda County],83605.0,3.0
+535,reietss2005@yahoo.com,Your Geo Zone Selection [Santa Clara County],83605.0,2.0
+536,reietss2005@yahoo.com,Your Geo Zone Selection [Santa Cruz County],83605.0,2.0
+537,reietss2005@yahoo.com,Your Geo Zone Selection [San Mateo County],83605.0,3.0
+538,reietss2005@yahoo.com,Your Geo Zone Selection [San Francisco County],83605.0,3.0
+539,mahmoodmused77@yahoo.com,Your Geo Zone Selection [Lake County],78452.0,1.0
+540,mahmoodmused77@yahoo.com,Your Geo Zone Selection [Sonoma County],78452.0,1.0
+541,mahmoodmused77@yahoo.com,Your Geo Zone Selection [Marin County],78452.0,1.0
+542,mahmoodmused77@yahoo.com,Your Geo Zone Selection [Napa County],78452.0,1.0
+543,mahmoodmused77@yahoo.com,Your Geo Zone Selection [Solano County],78452.0,1.0
+544,mahmoodmused77@yahoo.com,Your Geo Zone Selection [Contra Costa County],78452.0,1.0
+545,mahmoodmused77@yahoo.com,Your Geo Zone Selection [Alameda County],78452.0,3.0
+546,mahmoodmused77@yahoo.com,Your Geo Zone Selection [Santa Clara County],78452.0,1.0
+547,mahmoodmused77@yahoo.com,Your Geo Zone Selection [Santa Cruz County],78452.0,1.0
+548,mahmoodmused77@yahoo.com,Your Geo Zone Selection [San Mateo County],78452.0,1.0
+549,mahmoodmused77@yahoo.com,Your Geo Zone Selection [San Francisco County],78452.0,3.0
+550,sainiatul@hotmail.com,Your Geo Zone Selection [Lake County],147682.0,1.0
+551,sainiatul@hotmail.com,Your Geo Zone Selection [Sonoma County],147682.0,1.0
+552,sainiatul@hotmail.com,Your Geo Zone Selection [Marin County],147682.0,1.0
+553,sainiatul@hotmail.com,Your Geo Zone Selection [Napa County],147682.0,1.0
+554,sainiatul@hotmail.com,Your Geo Zone Selection [Solano County],147682.0,1.0
+555,sainiatul@hotmail.com,Your Geo Zone Selection [Contra Costa County],147682.0,1.0
+556,sainiatul@hotmail.com,Your Geo Zone Selection [Alameda County],147682.0,2.0
+557,sainiatul@hotmail.com,Your Geo Zone Selection [Santa Clara County],147682.0,3.0
+558,sainiatul@hotmail.com,Your Geo Zone Selection [Santa Cruz County],147682.0,2.0
+559,sainiatul@hotmail.com,Your Geo Zone Selection [San Mateo County],147682.0,3.0
+560,sainiatul@hotmail.com,Your Geo Zone Selection [San Francisco County],147682.0,3.0
+561,camonroe60@gmail.com,Your Geo Zone Selection [Lake County],134755.0,2.0
+562,camonroe60@gmail.com,Your Geo Zone Selection [Sonoma County],134755.0,2.0
+563,camonroe60@gmail.com,Your Geo Zone Selection [Marin County],134755.0,2.0
+564,camonroe60@gmail.com,Your Geo Zone Selection [Napa County],134755.0,2.0
+565,camonroe60@gmail.com,Your Geo Zone Selection [Solano County],134755.0,2.0
+566,camonroe60@gmail.com,Your Geo Zone Selection [Contra Costa County],134755.0,3.0
+567,camonroe60@gmail.com,Your Geo Zone Selection [Alameda County],134755.0,3.0
+568,camonroe60@gmail.com,Your Geo Zone Selection [Santa Clara County],134755.0,2.0
+569,camonroe60@gmail.com,Your Geo Zone Selection [Santa Cruz County],134755.0,2.0
+570,camonroe60@gmail.com,Your Geo Zone Selection [San Mateo County],134755.0,3.0
+571,camonroe60@gmail.com,Your Geo Zone Selection [San Francisco County],134755.0,3.0
+572,ikhjonon@yahoo.com,Your Geo Zone Selection [Lake County],66398.0,1.0
+573,ikhjonon@yahoo.com,Your Geo Zone Selection [Sonoma County],66398.0,1.0
+574,ikhjonon@yahoo.com,Your Geo Zone Selection [Marin County],66398.0,2.0
+575,ikhjonon@yahoo.com,Your Geo Zone Selection [Napa County],66398.0,1.0
+576,ikhjonon@yahoo.com,Your Geo Zone Selection [Solano County],66398.0,1.0
+577,ikhjonon@yahoo.com,Your Geo Zone Selection [Contra Costa County],66398.0,1.0
+578,ikhjonon@yahoo.com,Your Geo Zone Selection [Alameda County],66398.0,1.0
+579,ikhjonon@yahoo.com,Your Geo Zone Selection [Santa Clara County],66398.0,1.0
+580,ikhjonon@yahoo.com,Your Geo Zone Selection [Santa Cruz County],66398.0,1.0
+581,ikhjonon@yahoo.com,Your Geo Zone Selection [San Mateo County],66398.0,1.0
+582,ikhjonon@yahoo.com,Your Geo Zone Selection [San Francisco County],66398.0,3.0
+583,highprofits1@gmail.com,Your Geo Zone Selection [Lake County],117437.0,2.0
+584,highprofits1@gmail.com,Your Geo Zone Selection [Sonoma County],117437.0,2.0
+585,highprofits1@gmail.com,Your Geo Zone Selection [Marin County],117437.0,3.0
+586,highprofits1@gmail.com,Your Geo Zone Selection [Napa County],117437.0,2.0
+587,highprofits1@gmail.com,Your Geo Zone Selection [Solano County],117437.0,2.0
+588,highprofits1@gmail.com,Your Geo Zone Selection [Contra Costa County],117437.0,3.0
+589,highprofits1@gmail.com,Your Geo Zone Selection [Alameda County],117437.0,2.0
+590,highprofits1@gmail.com,Your Geo Zone Selection [Santa Clara County],117437.0,2.0
+591,highprofits1@gmail.com,Your Geo Zone Selection [Santa Cruz County],117437.0,2.0
+592,highprofits1@gmail.com,Your Geo Zone Selection [San Mateo County],117437.0,2.0
+593,highprofits1@gmail.com,Your Geo Zone Selection [San Francisco County],117437.0,3.0
